@@ -1,0 +1,8 @@
+version: "3"
+services:
+  nodestatus:
+    image: 24802117/nodestatus-client:1.0.9
+    container_name: nodestatus-client
+    restart: always
+    
+    command: ./bin/app --dsn ws://mac:password@ip:35601
